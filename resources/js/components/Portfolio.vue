@@ -1,10 +1,6 @@
 <template>
   <div class="body">
-    <div
-      class="card"
-      v-for="album in albums"
-      :key="album"
-    >
+    <div class="card" v-for="album in albums" :key="album">
       <div
         class="card-image"
         v-bind:style="{
@@ -86,6 +82,7 @@ export default {
   background: url("../../assets/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 

@@ -112,7 +112,6 @@ export default {
           console.log(error.response.data);
           console.log(error.response.status);
           console.log(error.response.headers);
-
         })
         .finally(() => loader.hide());
     },
@@ -127,6 +126,9 @@ export default {
   align-items: center;
   min-height: 100vh;
   background: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 
